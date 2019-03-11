@@ -1,0 +1,179 @@
+@CHARSET "ISO-8859-1";
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  transition: background-color .5s;
+}
+
+ #myPic{
+	width: 15%;
+	float: left;
+}
+ 
+#myPic img{
+	padding: 10px;
+	border-radius: 30px; 
+}
+
+#objective{
+	float:left;
+	padding-top: 10px;
+}
+
+#objective div{
+	padding: 10px;
+	border: 3px;
+	border-radius:5px;
+	  
+}
+
+#header{
+	color: white;
+	font-size: large;
+	position: fixed;
+	width: 100%; 
+	top:0;
+	left:0;
+	background-color: purple;
+}
+
+#footer{
+	position: fixed;
+	width: 100%; 
+	bottom:0;
+	left:0;
+	/* background-color: white; */
+	height: 90px;
+}
+
+#footer img{
+	float:left;
+	padding:5px;
+}
+
+.menuTxt{
+	display:none;
+}
+
+#name{
+	padding-top: 2px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.menu{
+	background-color: gray;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top:0;
+	left:0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 80px;
+	z-index: 1;
+}
+
+.menu a{
+	background-color: silver;
+	margin:0px;
+	padding: 8px 8px 8px 32px;
+	border-radius: 10px; 
+	color: black;
+	display:block;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.menu a:hover {
+  background-color: grey;
+  color:white;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: grey;
+}
+
+
+#menuButton{
+	cursor:pointer;
+	float: left;
+}
+
+#mainContent {
+  transition: margin-left .5s;
+  padding: 20px;
+  /* padding: 16px; */
+}
+
+#education, #technicalSkills, #experience, #contact{
+	display: none;
+}
+
+.homeTable{
+	display: table;
+}
+
+.technicalTable, .educationTable {
+	display: table;
+	/* margin-left: 20%; */
+	border-spacing:5px;
+}
+	
+.experienceTable{
+	display: table;
+	width: 100%;
+}
+
+.row{
+	display: table-row;
+}
+
+.col{
+	display: table-cell;
+	padding: 8px;
+	border: 3px;
+	border-radius: 10px;
+	vertical-align: top;
+	
+}
+
+.colourOdd{
+	background-color: #C7D9E3; 
+}
+
+
+#contact{
+	padding-top: 10px;
+}
+
+
+.floatRight{
+	float:right;
+}
+
+@media screen and (min-width: 600px) {
+	.menuTxt{
+		vertical-align:middle;
+		display:block;
+	}
+	
+	.technicalTable, .educationTable {
+		margin-left: 20%; 
+	}
+}
+
+/* @media screen and (min-width: 600px) {
+  .imageSmall{
+  	display: none;
+  }
+  .image {
+    display: block;
+  } 
+}
+ */  
