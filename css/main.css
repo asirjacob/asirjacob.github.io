@@ -109,6 +109,7 @@ body {
   transition: margin-left .5s;
   padding: 20px;
   /* padding: 16px; */
+  padding-bottom: 50px;
 }
 
 #education, #technicalSkills, #experience, #contact{
@@ -168,12 +169,14 @@ body {
 	}
 }
 
-/* @media screen and (min-width: 600px) {
-  .imageSmall{
-  	display: none;
+ @media screen and (max-width: 400px) {
+  #footer img{
+  	height: 20px;
   }
-  .image {
-    display: block;
-  } 
+  
+  #experience .row .col span{
+  	float: none;
+  	display: block;
+  }
 }
- */  
+  
