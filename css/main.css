@@ -108,7 +108,6 @@ body {
 #mainContent {
   transition: margin-left .5s;
   padding: 20px;
-  /* padding: 16px; */
   padding-bottom: 50px;
 }
 
@@ -169,7 +168,7 @@ body {
 	}
 }
 
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 420px) {
   #footer img{
   	height: 20px;
   }
