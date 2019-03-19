@@ -173,6 +173,14 @@ body {
   	height: 20px;
   }
   
+  #footer .smallImg{
+  	height: 30px;
+  }
+  
+  #footer .longImg{
+  	width: 50px;
+  }
+  
   #experience .row .col span{
   	float: none;
   	display: block;
