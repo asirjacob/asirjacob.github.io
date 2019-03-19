@@ -48,7 +48,7 @@ body {
 
 #footer img{
 	float:left;
-	padding:5px;
+	padding:7px;
 }
 
 .menuTxt{
@@ -108,7 +108,7 @@ body {
 #mainContent {
   transition: margin-left .5s;
   padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 #education, #technicalSkills, #experience, #contact{

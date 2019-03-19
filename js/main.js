@@ -2,6 +2,24 @@
  * 
  */
 
+$(document).ready(function(){
+	var joinedYear = 2011;
+	var nonExpInJoiinedYear = 6;
+	var currentDate = new Date();
+	var totalMonthsOfExp = ((currentDate.getFullYear() - joinedYear) * 12) - nonExpInJoiinedYear + (currentDate.getMonth() + 1);
+	var totalYearsOfExp = ~~(totalMonthsOfExp / 12);
+	var remMonthsOfExp = totalMonthsOfExp % 12;
+	
+	var monthTxt = "";
+	if(remMonthsOfExp > 1){
+		monthTxt = " and " + remMonthsOfExp +" months";
+	}else if(remMonthsOfExp == 1){
+		monthTxt = " and " + remMonthsOfExp +" month";
+	}
+	var objExpTxt = "Software Engineer with "+ totalYearsOfExp + " years" + monthTxt +" of experience in developing robust code for high volume business.";
+	$("#objectiveExp").append(objExpTxt);
+});
+
 function viewHome(){
 	$('#home').css({
 	    'display' : 'block'
